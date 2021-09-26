@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "json-server": "json-server db.json --middlewares ./auth-middleware.js --routes routes.json"
+    "json-server": "json-server db.json --middlewares ./auth-middleware.js --routes routes.json",
+    "heroku-prebuild": "npm install"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "json-server": "^0.16.3"
   }
 }
